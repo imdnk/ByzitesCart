@@ -5,7 +5,7 @@ import { Navigator } from './src/infrastructure/navigations';
 
 export default function App() {
   return (
-      <Navigator />
+          <Navigator />
   );
 }
 

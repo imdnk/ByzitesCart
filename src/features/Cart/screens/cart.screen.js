@@ -1,8 +1,12 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, SafeAreaView } from "react-native";
+
 
 export const CartScreen = () => {
-  return(<Text>    
+  return(
+  <SafeAreaView>
+    <Text>    
       Cart Screen here.....
-  </Text>)
+    </Text>
+  </SafeAreaView> )
 };

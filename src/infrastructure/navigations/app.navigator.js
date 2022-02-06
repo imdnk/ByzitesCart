@@ -13,9 +13,11 @@ const Tab = createBottomTabNavigator();
 
 export const AppNavigator = () => {
  return(
-    <Tab.Navigator>
+      <Tab.Navigator>
     <Tab.Screen name="Home" component={HomeScreen} options={{headerShown: false }}/>
     <Tab.Screen name="Cart" component={CartScreen}  options={{headerShown: false }} />
   </Tab.Navigator>
+  
+    
  );
 };

@@ -1,8 +1,18 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, SafeAreaView, StyleSheet, ScrollView } from "react-native";
+
+import { CartCard } from "../../../components/card.component";
+import { Mocks } from "../../../services/index";
 
 export const HomeScreen = () => {
-  return(<Text>
+  return(
+  <SafeAreaView style ={ { flex: 1}}>
+      <Text>
       Home Screen here.....
-  </Text>)
+      </Text>
+      <ScrollView>
+      {Mocks.map((item) => { return (<CartCard item ={item}/>);})}
+      </ScrollView>  
+  </SafeAreaView>
+  );
 };
